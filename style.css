@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #111;
+    color: #fff;
+  }
+  
+  header {
+    background-color: #222;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    background-color: #2e1b69;
+    padding: 1rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  
+  .profile .info {
+    flex: 1;
+  }
+  
+  .profile h2 {
+    margin: 0;
+  }
+  
+  .subtitle {
+    font-style: italic;
+    color: #ccc;
+  }
+  
+  .tagline {
+    color: #aaa;
+  }
+  
+  .about {
+    background-color: #1e2e9f;
+    padding: 1.5rem;
+  }
+  
+  .about h2 {
+    margin-top: 0;
+  }
+  
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 16px;
+    margin-top: 1rem;
+  }
+  
+  .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .skill span {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #cfd3ff;
+  }
+  
+  .bar {
+    width: 100%;
+    height: 6px;
+    background: #182056;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .bar::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; bottom: 0;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #ffffff, #89a3ff);
+  }
+  
+  .bar.html::after { width: 92%; }
+  .bar.css::after  { width: 78%; }
+  .bar.java::after { width: 65%; }
+  
+  .html {
+    width: 90%;
+    background-color: #f16529;
+  }
+  
+  .css {
+    width: 80%;
+    background-color: #2965f1;
+  }
+  
+  .java {
+    width: 70%;
+    background-color: #5382a1;
+  }
+  
+  .projects {
+    background-color: #162252;
+    padding: 1.5rem;
+  }
+  
+  .projects h2 {
+    text-align: center;
+  }
+  
+  .project-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .project-grid img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+  }
+  
+  .project-grid p {
+    text-align: center;
+  }
+  
+  .contact {
+    background-color: #182056;
+    padding: 1.5rem;
+  }
+  
+  .contact h2 {
+    text-align: center;
+  }
+  
+  .contact p, .contact a {
+    text-align: center;
+    display: block;
+    margin: 0.3rem 0;
+    color: #ddd;
+    text-decoration: none;
+  }
+  
+  .contact a:hover {
+    text-decoration: underline;
+  }
+     
